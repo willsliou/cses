@@ -7,7 +7,6 @@ Language:	C++17
 Status:	READY
 Result:	ACCEPTED
 */
-
 /*
 https://cses.fi/problemset/task/1069
 You are given a DNA sequence: a string consisting of characters A, C, G, and T. Your task is to find the longest repetition in the sequence. This is a maximum-length substring containing only one type of character.
@@ -31,7 +30,6 @@ Output:
 3
 */
 
-
 #include <iostream>
 using std::cin;
 using std::cout;
@@ -42,10 +40,9 @@ int main() {
     // Read input to string
     string s;
     cin >> s;
-
-    char front = 'A';
-
+    
     int ans = 1, count = 0;
+    char front = 'A';
 
     for (char back : s) {
         // If characters are equal, increase sum by one
@@ -54,25 +51,10 @@ int main() {
             ans = std::max(ans, count);
         }
         else {
-            // Front to next item, reset count
+            // Front to next item, reset count to one character
             front = back;
-            count = 0;
+            count = 1;
         }
     }
-
-    // int windowStart = 0, windowEnd = 0;
-
-    // for (int i = 0; i )
-    //     if (windowStart == windowEnd) {
-    //         windowEnd++;
-    //     }
-    //     else if (windowStart != windowEnd) {
-    //         windowStart++;
-    //         windowEnd++;
-    //     }
-    //     std::max(windowStart-windowEnd)
-
-
-        
-
+    cout << ans;
 }
