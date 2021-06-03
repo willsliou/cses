@@ -1,12 +1,13 @@
 /*
 Submission details
-Task:	Missing Number
+Task:	Repetitions
 Sender:	willbutplural
-Submission time:	2021-06-03 09:39:06
+Submission time:	2021-06-03 10:42:11
 Language:	C++17
 Status:	READY
 Result:	ACCEPTED
 */
+
 /*
 https://cses.fi/problemset/task/1069
 You are given a DNA sequence: a string consisting of characters A, C, G, and T. Your task is to find the longest repetition in the sequence. This is a maximum-length substring containing only one type of character.
