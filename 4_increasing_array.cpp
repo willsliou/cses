@@ -1,8 +1,8 @@
 /*
 Submission details
-Task:	Repetitions
+Task:	Increasing Array
 Sender:	willbutplural
-Submission time:	2021-06-03 10:42:11
+Submission time:	2021-06-03 11:11:16
 Language:	C++17
 Status:	READY
 Result:	ACCEPTED
