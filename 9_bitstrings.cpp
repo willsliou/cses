@@ -1,47 +1,39 @@
 /*
 Submission details
-Task:	Permutations
+Task:	Bit Strings
 Sender:	willbutplural
-Submission time:	2021-06-04 09:52:59
+Submission time:	2021-06-04 21:49:55
 Language:	C++17
 Status:	READY
 Result:	ACCEPTED
 */
 
 /*
-https://cses.fi/problemset/task/1070
-A permutation of integers 1,2,…,n is called beautiful if there are no adjacent elements whose difference is 1.
+Your task is to calculate the number of bit strings of length n.
 
-Given n, construct a beautiful permutation if such a permutation exists.
+For example, if n=3, the correct answer is 8, because the possible bit strings are 000, 001, 010, 011, 100, 101, 110, and 111.
 
 Input
 
-The only input line contains an integer n.
+The only input line has an integer n.
 
 Output
 
-Print a beautiful permutation of integers 1,2,…,n. If there are several solutions, you may print any of them. If there are no solutions, print "NO SOLUTION".
+Print the result modulo 109+7.
 
 Constraints
 1≤n≤106
-Example 1
-
-Input:
-5
-
-Output:
-4 2 5 3 1
-
-Example 2
+Example
 
 Input:
 3
 
 Output:
-NO SOLUTION
+8
 */
 
 #include <iostream>
+#include <math.h>
 using std::cin;
 using std::cout;
 using std::endl;
@@ -51,12 +43,14 @@ using std::string;
 int main() {
     // 1 3 4 2
     // 1 3 5 2 4
-    ll n, ans=1;
+    ll n, ans = 1;
     cin >> n;
 
     for(int i = 0; i<n; i++)
         ans = 2*ans%((int)1e9+7);
-        cout << "r: " << ans << endl;
+    
+    // cout << pow(2,n) % ((int)1e9+7);
+        // cout << "r: " << ans << endl;
         
     cout << ans;
 
