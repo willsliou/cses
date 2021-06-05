@@ -33,7 +33,7 @@ Output:
 */
 
 #include <iostream>
-#include <math.h>
+// #include <math.h>
 using std::cin;
 using std::cout;
 using std::endl;
@@ -46,6 +46,7 @@ int main() {
     ll n, ans = 1;
     cin >> n;
 
+    // Raise to the power n times
     for(int i = 0; i<n; i++)
         ans = 2*ans%((int)1e9+7);
     
