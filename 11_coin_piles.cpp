@@ -47,8 +47,20 @@ using std::string;
 int main() {
 
 
-    ll n, ans = 0;
+    int n;
     cin >> n;
+
+    while (n--) {
+        int a, b;
+        cin >> a >> b;
+
+        if (a+b % 3 == 0 && b<= a*2  * b>=a) {
+            cout << "YES";
+        } else {
+            cout << "NO";
+        }
+
+    }
 
 
 } // main
