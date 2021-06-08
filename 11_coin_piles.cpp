@@ -35,14 +35,37 @@ NO
 YES
 */
 
-
 #include <iostream>
-using std::cin;
-using std::cout;
-using std::endl;
-using std::string;
+#include <cstdio>
+#include <limits>
+#include <fstream>
+#include <string>
+#include <cmath>
+#include <iterator>
+#include <locale>
+#include <new>
+#include <vector>
+#include <list>
+#include <map>
+#include <memory>
+#include <numeric>
+#include <ostream>
+#include <queue>
+#include <set>
+#include <sstream>
+#include <stack>
+using namespace std;
 
-#define ll long long
+
+// https://usaco.guide/PAPS.pdf#page=41
+
+#define rep(i, a, b) for(int i = a; i < (b); ++i)
+#define trav(a, x) for(auto& a : x)
+#define all(x) x.begin(), x.end()
+#define sz(x) (int)(x).size()
+typedef long long ll;
+typedef pair<int, int> pii;
+typedef vector<int> vi;
 
 int main() {
 
@@ -54,10 +77,10 @@ int main() {
         int a, b;
         cin >> a >> b;
 
-        if (a+b % 3 == 0 && b<= a*2  * b>=a) {
-            cout << "YES";
+        if (a+b % 3 == 0 && b<= a*2 && 2*b>=a) {
+            cout << "YES" << endl;;
         } else {
-            cout << "NO";
+            cout << "NO" << endl;
         }
 
     }
