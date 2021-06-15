@@ -68,24 +68,15 @@ typedef pair<int, int> pii;
 typedef vector<int> vi;
 
 int main() {
-
-
     int n;
     cin >> n;
-
-    while (n--) {
-        int a, b;
-        cin >> a >> b;
-
-        // Combine pile and basically remove 3 stones to make a combined pile of 0
-        // If 
-        if ( (2*a - b) % 3 == 0 && (2*b - a) % 3 == 0) {
-            cout << "YES" << endl;;
-        } else {
-            cout << "NO" << endl;
-        }
-
+    // use a set to store unique elements in sorted order
+    set<int> mySet;
+    for (int i = 0; i < n; i++) {
+        int a;
+        mySet.insert(a);
     }
 
+    cout << mySet.size();
 
 } // main
