@@ -1,38 +1,38 @@
 /*
-
+Submission details
+Task:	Distinct Numbers
+Sender:	willbutplural
+Submission time:	2021-06-15 03:19:09
+Language:	C++17
+Status:	READY
+Result:	ACCEPTED
 */
 
 /*
-https://cses.fi/problemset/task/1754
-You have two coin piles containing a and b coins. On each move, you can either remove one coin from the left pile and two coins from the right pile, or two coins from the left pile and one coin from the right pile.
-
-Your task is to efficiently find out if you can empty both the piles.
+https://cses.fi/problemset/task/1621/
+You are given a list of n integers, and your task is to calculate the number of distinct values in the list.
 
 Input
 
-The first input line has an integer t: the number of tests.
+The first input line has an integer n: the number of values.
 
-After this, there are t lines, each of which has two integers a and b: the numbers of coins in the piles.
+The second line has n integers x1,x2,…,xn.
 
 Output
 
-For each test, print "YES" if you can empty the piles and "NO" otherwise.
+Print one integers: the number of distinct values.
 
 Constraints
-1≤t≤105
-0≤a,b≤109
+1≤n≤2⋅105
+1≤xi≤109
 Example
 
 Input:
-3
-2 1
-2 2
-3 3
+5
+2 3 2 2 3
 
 Output:
-YES
-NO
-YES
+2
 */
 
 #include <iostream>
@@ -74,6 +74,7 @@ int main() {
     set<int> mySet;
     for (int i = 0; i < n; i++) {
         int a;
+        cin >> a;
         mySet.insert(a);
     }
 
